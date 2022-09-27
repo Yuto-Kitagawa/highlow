@@ -1,5 +1,8 @@
 """
-デモバージョンは、ログイン処理がいらないのでID・passwordを削除しています。
+pip install playwright
+python -m playwright install
+
+デモバージョンは、ログイン処理がいらないのでID・password・時間指定を削除しています。
 """
 
 # playwrightモジュール
