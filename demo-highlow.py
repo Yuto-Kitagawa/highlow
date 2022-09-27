@@ -118,7 +118,7 @@ with sync_playwright() as playwright:
             print("エントリー金額が1,000円未満です")
         elif ticker == "":
             print("通貨ペアが未設定です")
-        elif ticker == "":
+        elif duration == "":
             print("オプションの期間が未設定です")
         else:
             # 自動エントリーを実行する
