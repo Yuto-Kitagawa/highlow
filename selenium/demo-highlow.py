@@ -17,25 +17,16 @@ import time
 import sys
 
 _URL = 'https://app.highlow.com/quick-demo'
-# _URL_QUIC_DEMO = 'https://sushida.net/play.html'
 
 options = webdriver.ChromeOptions()
-# ヘッドレス化
-# options.add_argument('--headless')
-# UAをChromeに偽装
-# options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36')
 
 try:
     driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
-    # driver_wait = WebDriverWait(driver=driver, timeout=60)
-    #driver.implicitly_wait(60)
     driver.set_window_size(1920, 1080)
 except Exception as e:
     print('Driver Init Error')
     raise
 
-callback = []
-#callback.append(entry())
 
 def entry():
     print('entry()')
